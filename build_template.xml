@@ -28,6 +28,18 @@
   <property name="src.dir" value="src"/>
   <property name="projectHome" location="." />
 
+  <target name="compile">
+    <javac srcdir="${projectHome}/"
+           destdir="${projectHome}/bin"
+           classpath="ewon-java-etk.jar"
+           listfiles="yes"
+           includeantruntime="no"
+           source="1.4"
+           target="1.4">
+      <compilerarg value="-Xlint:-options"/>
+    </javac>
+  </target>
+
   <target name="buildjar">
     <jar destfile="${projectHome}/build/${ProjectName}.jar" basedir="${projectHome}/bin" />
   </target>

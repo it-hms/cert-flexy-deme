@@ -6,7 +6,7 @@
         {
             "label": "compile",
             "type": "shell",
-            "command": "javac -Xlint:-options -source 1.4 -target 1.4 -cp ./ewon-java-etk.jar -d bin $(find $SRC_FOLDERS -name \"*.java\")",
+            "command": "ant \"compile\" -noinput -buildfile build.xml",
             "group": "build",
             "presentation": {
                 "echo": true,
