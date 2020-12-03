@@ -8,7 +8,9 @@ import com.hms_networks.americas.sc.logging.Logger;
  */
 public class ConnectorMain {
 
-  /** Configures the logger to the logging level specified in the configuration. */
+  /**
+   * Configures the logger to the logging level specified in the configuration.
+   */
   private static void configLogger() {
     // Configure logger to desired log level
     int loglevel = 5;
